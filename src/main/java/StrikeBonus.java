@@ -6,7 +6,7 @@ import java.util.List;
 public class StrikeBonus implements Bonus {
 
     @Override
-    public int getBonus(List<Turn> gameList, int turn) {
-        return gameList.get(++turn).getScore();
+    public int getValue(List<Turn> turnList, int turnNumber) {
+        return turnList.get(++turnNumber).getScore();
     }
 }

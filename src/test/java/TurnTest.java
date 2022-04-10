@@ -14,4 +14,26 @@ class TurnTest {
         Assertions.assertEquals(10,result);
     }
 
+    @Test
+    void checkForBonusTest(){
+        Turn t = new Turn(3,7);
+        t.checkForBonus();
+        Assertions.assertTrue(t.isEligibleBonusSpare());
+    }
+
+    @Test
+    void checkForBonusTest2(){
+        Turn t = new Turn(10,0);
+        t.checkForBonus();
+        Assertions.assertTrue(t.isEligibleBonusStrike());
+    }
+
+    @Test
+    void checkForBonusTest3(){
+        Turn t = new Turn(2,6);
+        t.checkForBonus();
+        Assertions.assertFalse(t.isEligibleBonusStrike());
+        Assertions.assertFalse(t.isEligibleBonusSpare());
+    }
+
 }

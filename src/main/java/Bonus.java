@@ -2,5 +2,5 @@ import java.util.List;
 
 public interface Bonus {
 
-    int getBonus(List<Turn> gameList, int turn);
+    int getValue(List<Turn> turnList, int turnNumber);
 }

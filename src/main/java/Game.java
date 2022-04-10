@@ -24,7 +24,7 @@ public class Game {
                 bonus = new StrikeBonus();
         }
         if(bonus!=null){
-            return bonus.getBonus(this.getFrames(),this.getFrames().indexOf(t));
+            return bonus.getValue(this.getFrames(),this.getFrames().indexOf(t));
 
         }else {
             return 0;
