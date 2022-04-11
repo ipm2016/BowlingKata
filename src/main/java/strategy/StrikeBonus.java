@@ -1,3 +1,5 @@
+package strategy;
+
 import lombok.Setter;
 
 import java.util.List;

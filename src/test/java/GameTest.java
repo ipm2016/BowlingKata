@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import strategy.Turn;
 
 
 import java.util.Arrays;
@@ -20,7 +21,7 @@ class GameTest {
         List<Turn> turns = Arrays.asList(turn1,turn2,turn3,turn4,turn5,turn6,turn7,turn8,turn9,turn10);
 
         Game game = new Game();
-        game.setFrames(turns);
+        game.setTurnList(turns);
 
         int result = game.getFinalScore();
 
@@ -44,7 +45,7 @@ class GameTest {
         List<Turn> turns = Arrays.asList(turn1,turn2,turn3,turn4,turn5,turn6,turn7,turn8,turn9,turn10,bonusTurn);
 
         Game game = new Game();
-        game.setFrames(turns);
+        game.setTurnList(turns);
 
         int result = game.getFinalScore();
 
@@ -68,7 +69,7 @@ class GameTest {
         List<Turn> turns = Arrays.asList(turn1,turn2,turn3,turn4,turn5,turn6,turn7,turn8,turn9,turn10,bonusTurn);
 
         Game game = new Game();
-        game.setFrames(turns);
+        game.setTurnList(turns);
 
         int result = game.getFinalScore();
 
@@ -91,7 +92,7 @@ class GameTest {
         List<Turn> turns = Arrays.asList(turn1,turn2,turn3,turn4,turn5,turn6,turn7,turn8,turn9,turn10);
 
         Game game = new Game();
-        game.setFrames(turns);
+        game.setTurnList(turns);
 
         int result = game.getFinalScore();
 
@@ -114,7 +115,7 @@ class GameTest {
         List<Turn> turns = Arrays.asList(turn1,turn2,turn3,turn4,turn5,turn6,turn7,turn8,turn9,turn10);
 
         Game game = new Game();
-        game.setFrames(turns);
+        game.setTurnList(turns);
 
         int result = game.getFinalScore();
 

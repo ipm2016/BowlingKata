@@ -1,3 +1,5 @@
+package strategy;
+
 import lombok.Data;
 
 import java.util.List;
